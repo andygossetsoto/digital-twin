@@ -18,15 +18,17 @@ if OPENAI_API_KEY is None:
     raise Exception("API key is missing.")
 
 client = OpenAI()
+print("Testing logs", flush=True)
 
 #=======================================
 # Documents
 #=======================================
 document_overview = """
 Andrea is an experienced Front End Engineer based in Atlanta, Georgia. She studied Animation and Digital 
-Arts at Tecnológico de Monterrey in Mexico from 2011 to 2015. She is currently going through an AI 
-Engineering course where she's learned about LLM Basics, Context, LLM Tool Calling, RAG, Deployment to 
-Hugging Face and Render, and Agentic AI.
+Arts at Tecnológico de Monterrey in Mexico from 2011 to 2015.
+She is currently going through an AI Engineering course where she's learned about LLM Basics, Context, 
+LLM Tool Calling, RAG, Deployment to Hugging Face and Render, and Agentic AI.
+Andrea has been working as a Senior Front End Developer at Rooms To Go for the last 3 years and a half.
 
 What drives Andrea professionally:
 Andrea enjoys understanding the business context behind a request rather than focusing only on its 
@@ -197,10 +199,7 @@ implementing new customer-facing functionality, and collaborating with cross-fun
 teams. She has also taken on front-end leadership responsibilities and worked to improve 
 Agile processes, engineering efficiency, and delivery.
 
-Key contributions include:
-
-- Spearheaded front-end Artificial Intelligence (AI) initiatives designed to improve 
-customer engagement, contributing to a 30 percent increase in sales revenue.
+Key contributions at Rooms To Go include:
 
 - Helped migrate the primary Rooms To Go e-commerce website from React.js and Material UI 
 (MUI) to Next.js, TypeScript, and Tailwind CSS. The new architecture introduced a more 
@@ -215,6 +214,43 @@ improvements supported timely website updates, including weekly sales and promot
 requirements and translate them into actionable engineering tickets. Andrea also assumed 
 leadership responsibilities for coordinating and supporting their implementation within the 
 front-end team.
+
+Rooms To Go AI-Specific Projects:
+
+1. AI-Powered Customer Review Summarization at Rooms To Go
+Andrea spearheaded the front-end implementation of an AI-powered customer review summarization 
+feature at Rooms To Go. The solution used n8n to automate the processing and 
+categorization of customer reviews before providing the categorized review data to a Large Language 
+Model (LLM).
+The LLM analyzed the reviews and generated two types of AI summaries: an overall summary 
+representing the general customer sentiment and key themes across all reviews, and category-specific 
+summaries highlighting feedback related to individual review categories.
+This project combined front-end engineering, workflow automation with n8n, LLM integration, 
+review categorization, and database updates to transform large volumes of individual customer 
+reviews into concise and useful summaries.
+
+2. AI-Powered Front-End Documentation Automation at Rooms To Go
+
+Andrea implemented an AI-powered documentation workflow using GitHub agents to automatically 
+detect application changes, generate technical documentation, and publish updates to Confluence.
+The workflow is triggered when a specific schema file is modified, signaling that the portion of 
+the front-end application being documented has changed. A GitHub agent detects the modification 
+and initiates a request for the AI to investigate the relevant project sources needed to understand 
+the update and its impact.
+
+The AI analyzes these sources to determine the functionality and logic associated with the change. 
+It then generates a comprehensive description that captures the relevant application logic and 
+updates a structured JSON file that serves as the source of truth for the expected documentation.
+
+When the changes are ready to be merged into production, a second GitHub agent checks whether the 
+documentation JSON file was modified. If an update is detected, the agent automatically publishes 
+the corresponding documentation changes to the appropriate Confluence pages.
+
+This workflow creates an automated documentation pipeline in which application changes trigger 
+AI-assisted analysis and documentation generation, while the production workflow ensures that 
+approved documentation is automatically published to Confluence. The process helps keep documentation 
+synchronized with the application while reducing the manual effort required from developers to 
+document and communicate technical changes.
 
 
 Technical Skills:
@@ -530,7 +566,7 @@ gr.ChatInterface(
     fn=response_ai,
     title="Andrea's Digital Twin",
     chatbot=gr.Chatbot(avatar_images=(None, "andrea.jpg")),
-    description="Chat with an AI version of Andrea Gosset. Ask about her experience, project, or just say hi!",
+    description="Chat with an AI version of Andrea Gosset. Ask about her experience, projects, or just say hi!",
     examples=["What is your background?", "AI Engineering experience", "Front End experience", "Where did you go to college?"]
 
 ).launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
