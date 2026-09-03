@@ -7,6 +7,7 @@ import chromadb
 import json
 import requests
 import random
+import re
 
 #=======================================
 # Setup
@@ -23,7 +24,9 @@ client = OpenAI()
 #=======================================
 document_overview = """
 Andrea is an experienced Front End Engineer based in Atlanta, Georgia. She studied Animation and Digital 
-Arts at Tecnológico de Monterrey in Mexico from 2011 to 2015.
+Arts at Tecnológico de Monterrey in Mexico from 2011 to 2015. She is currently going through an AI 
+Engineering course where she's learned about LLM Basics, Context, LLM Tool Calling, RAG, Deployment to 
+Hugging Face and Render, and Agentic AI.
 
 What drives Andrea professionally:
 Andrea enjoys understanding the business context behind a request rather than focusing only on its 
@@ -527,13 +530,7 @@ gr.ChatInterface(
     fn=response_ai,
     title="Andrea's Digital Twin",
     chatbot=gr.Chatbot(avatar_images=(None, "andrea.jpg")),
-    description="Chat with an AI version of Andrea Gosset a senior Front End Engineer.",
-    examples=[
-        "Tell me some interesting facts about you.",
-        "How many years of experience do you have?",
-        "Where did you go to college?",
-        "Where are you working now?",
-        "Have you worked with AI in a professional project?"
-    ]
+    description="Chat with an AI version of Andrea Gosset. Ask about her experience, project, or just say hi!",
+    examples=["What is your background?", "AI Engineering experience", "Front End experience", "Where did you go to college?"]
 
 ).launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
