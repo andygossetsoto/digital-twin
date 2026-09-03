@@ -18,7 +18,6 @@ if OPENAI_API_KEY is None:
     raise Exception("API key is missing.")
 
 client = OpenAI()
-print("Testing logs", flush=True)
 
 #=======================================
 # Documents
@@ -352,12 +351,11 @@ for doc in documents:
     metadatas.extend(metadatas_)
 
 #Print for logs
-print(f"Created {len(chunks)} chunks: \n")
+print(f"Created {len(chunks)} chunks: \n", flush=True)
 
 for i, chunk in enumerate(chunks):
-    print(f"--- Chunk {i + 1} (ID: {ids[i]}, Source: {metadatas[i]['source']}, Index: {metadatas[i]['chunk_index']}, Length: {len(chunk)}):")
-    print(chunk)
-    print()
+    print(f"--- Chunk {i + 1} (ID: {ids[i]}, Source: {metadatas[i]['source']}, Index: {metadatas[i]['chunk_index']}, Length: {len(chunk)}):", flush=True)
+    print(chunk, flush=True)
 
 #Generate embeddings for all chunks
 response = client.embeddings.create(
@@ -367,8 +365,8 @@ response = client.embeddings.create(
 embeddings = [item.embedding for item in response.data]
 
 #Verify embeddings for logs
-print(f"Generated {len(embeddings)} embeddings")
-print(f"Each embedding has {len(embeddings[0])} dimensions")
+print(f"Generated {len(embeddings)} embeddings", flush=True)
+print(f"Each embedding has {len(embeddings[0])} dimensions", flush=True)
 
 #initialize ChromaDB client (persistent storage)
 chroma_client = chromadb.PersistentClient(path="./chroma_db_twin")
@@ -522,12 +520,12 @@ def response_ai(message, history):
     context = "\n---\n".join(results["documents"][0])
 
     #Print logs for debugging
-    print("\n========================\n")
-    print(f"User message: \n{message}\n")
-    print("***Retrieved Chunks:")
+    print("\n========================\n", flush=True)
+    print(f"User message: \n{message}\n", flush=True)
+    print("***Retrieved Chunks:", flush=True)
     for a, b in zip(results["documents"][0], results["metadatas"][0]):
-        print("---------------------")
-        print(f"<<Document {b['source']} -- Chunk {b['chunk_index']}:\n{a}\n")
+        print("---------------------", flush=True)
+        print(f"<<Document {b['source']} -- Chunk {b['chunk_index']}:\n{a}\n", flush=True)
 
     #Update system message with context (for this conversation turn)
     system_message_enhanced = system_message + "\n\nContext:\n" + context
