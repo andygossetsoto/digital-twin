@@ -52,7 +52,7 @@ Additional information about Andrea:
 - Although Andrea studied Animation and Digital Arts, she does not currently work in that field. She 
 graduated in 2015 and, three months later, started her first job as a Front End Developer. She discovered 
 that she loved software development and has continued working in the field ever since.
-- In 2008, Andrea spent time studying high school abroad.
+- In 2008, Andrea spent time studying a year abroad at Masillon - Ecole Bilingue Internationale.
 - Andrea loves peaches. She enjoys eating them on their own as well as in cakes, Jell-O, with cinnamon, 
 and in many other ways.
 - Andrea has loved singing since she was a child. She initially mostly sang in the shower, but as she got 
@@ -374,12 +374,12 @@ chroma_client = chromadb.PersistentClient(path="./chroma_db_twin")
 #Alternative: initialize ChromaDB client (in-memory   storage)
 #chroma_client = chromadb.Client()
 
-#Empty the collection before adding new data (for testint purposes in regular projects you don't need this functionality)
+#Empty the collection before adding new data (for testing purposes in regular projects you don't need this functionality)
 collection = chroma_client.get_or_create_collection(name="digital_twin")
 if collection.get()["ids"]:
     collection.delete(collection.get()["ids"])
 
-#Get or Create + Empty the collection before adding new data (for testint purposes in regular projects you don't need this functionality)
+#Get or Create + Empty the collection before adding new data (for testing purposes in regular projects you don't need this functionality)
 if collection.get()["ids"]:
     collection.delete(collection.get()["ids"])
 
@@ -490,12 +490,12 @@ system_message = """You are a digital twin of Andrea Gosset Soto. When people ta
 you respond AS Andrea Gosset Soto - in first person, using her voice, personality, and knowledge. 
 Start your very first message as: "Hi there! I'm Andrea" and go on with your regular message.
 
-Important: d not make things up. If you don't know an answer, say you don't know.
+Important: do not make things up. If you don't know an answer, say you don't know.
 The only factual information available to you is what's in this system message.
-You cannot get any more factos about Andrea from the interenet or make them up.
+You cannot get any more facts about Andrea from the internet or make them up.
 
 IMPORTANT: Whenever you don't know something about Andrea,
-ALWAYS use the send_notification tool to aler the real Andrea - do this automatically without 
+ALWAYS use the send_notification tool to alert the real Andrea - do this automatically without 
 asking the user."""
 
 #=======================================
@@ -516,7 +516,7 @@ def response_ai(message, history):
         n_results=3
     )
 
-    #RAG: Stich retrieve chunks together to create the context for the response
+    #RAG: Stitch retrieve chunks together to create the context for the response
     context = "\n---\n".join(results["documents"][0])
 
     #Print logs for debugging
@@ -542,18 +542,18 @@ def response_ai(message, history):
     message = response.choices[0].message
 
     while message.tool_calls:
-            from pprint import pprint
-            pprint(message.tool_calls)
-            tools_result = handle_tool_call(message.tool_calls)
-            messages.append(message)
-            messages.extend(tools_result)
-            response = client.chat.completions.create(
-                model="gpt-4.1-mini",
-                messages=messages,
-                tools=tools
-            )
-            message = response.choices[0].message
-            #Note: maybe consider adding protection from infinite consecutive tool calling
+        from pprint import pprint
+        pprint(message.tool_calls)
+        tools_result = handle_tool_call(message.tool_calls)
+        messages.append(message)
+        messages.extend(tools_result)
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=messages,
+            tools=tools
+        )
+        message = response.choices[0].message
+        #Note: maybe consider adding protection from infinite consecutive tool calling
         
     return(message.content)
 
