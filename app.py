@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from openai import OpenAI
 import gradio as gr
 from pprint import pprint
@@ -12,6 +13,8 @@ import re
 #=======================================
 # Setup
 #=======================================
+load_dotenv()
+
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 if OPENAI_API_KEY is None:
@@ -567,4 +570,4 @@ gr.ChatInterface(
     description="Chat with an AI version of Andrea Gosset. Ask about her experience, projects, or just say hi!",
     examples=["What is your background?", "AI Engineering experience", "Front End experience", "Where did you go to college?"]
 
-).launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
+).launch(server_name="127.0.0.1", server_port=int(os.environ.get("PORT", 7860)))
