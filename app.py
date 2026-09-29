@@ -361,11 +361,11 @@ for i, chunk in enumerate(chunks):
     print(chunk, flush=True)
 
 #Generate embeddings for all chunks
-response = client.embeddings.create(
+embedding_response = client.embeddings.create(
     model ="text-embedding-3-small",
     input = chunks
 )
-embeddings = [item.embedding for item in response.data]
+embeddings = [item.embedding for item in embedding_response.data]
 
 #Verify embeddings for logs
 print(f"Generated {len(embeddings)} embeddings", flush=True)
@@ -506,12 +506,12 @@ asking the user."""
 #=======================================
 def response_ai(message, history):
     #RAG:Embed the query using the same model we used for the chunks to ensure compatibility
-    response = client.embeddings.create(
+    query_embedding_response = client.embeddings.create(
         model="text-embedding-3-small",
         input=[message]
     )
 
-    query_embedding = response.data[0].embedding
+    query_embedding = query_embedding_response.data[0].embedding
 
     #RAG: Search ChromaDB
     results = collection.query(
@@ -537,12 +537,12 @@ def response_ai(message, history):
     messages = [{"role": "system", "content": system_message_enhanced}] + history + [{"role": "user", "content": message}]
 
     #Call LLM
-    response = client.chat.completions.create(
+    llm_response = client.chat.completions.create(
         model="gpt-4.1-mini",
         messages=messages,
         tools=tools
     )
-    message = response.choices[0].message
+    message = llm_response.choices[0].message
 
     while message.tool_calls:
         from pprint import pprint
@@ -550,12 +550,12 @@ def response_ai(message, history):
         tools_result = handle_tool_call(message.tool_calls)
         messages.append(message)
         messages.extend(tools_result)
-        response = client.chat.completions.create(
+        llm_response = client.chat.completions.create(
             model="gpt-4.1-mini",
             messages=messages,
             tools=tools
         )
-        message = response.choices[0].message
+        message = llm_response.choices[0].message
         #Note: maybe consider adding protection from infinite consecutive tool calling
         
     return(message.content)
