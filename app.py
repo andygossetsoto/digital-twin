@@ -26,268 +26,394 @@ client = OpenAI()
 # Documents
 #=======================================
 document_overview = """
-Andrea is an experienced Front End Engineer based in Atlanta, Georgia. She studied Animation and Digital 
-Arts at Tecnológico de Monterrey in Mexico from 2011 to 2015.
-She is currently going through an AI Engineering course where she's learned about LLM Basics, Context, 
-LLM Tool Calling, RAG, Deployment to Hugging Face and Render, and Agentic AI.
-Andrea has been working as a Senior Front End Developer at Rooms To Go for the last 3 years and a half.
+PROFESSIONAL OVERVIEW
+Andrea is an experienced Front End Engineer based in Atlanta, Georgia. Her professional background is 
+primarily in front-end software development and web development. She currently works as a Senior Front 
+End Developer at Rooms To Go, where she has worked for approximately three and a half years.
+Andrea is currently completing an AI Engineering course to expand her software engineering knowledge 
+into artificial intelligence. Her coursework includes Large Language Model fundamentals, LLM context, 
+tool and function calling, Retrieval-Augmented Generation (RAG), Agentic AI, and application deployment.
+As part of her AI Engineering studies, Andrea has learned how to deploy AI applications using platforms 
+such as Hugging Face and Render. She is also learning how LLM-powered applications can retrieve external 
+information, call tools, use context, and perform multi-step tasks through agentic workflows.
 
-What drives Andrea professionally:
-Andrea enjoys understanding the business context behind a request rather than focusing only on its 
-technical implementation. She likes identifying opportunities to improve both the codebase and the team's 
-Sprint and development processes. When she identifies an area for improvement, she works to create practical 
-strategies that can be introduced gradually and managed easily by the entire team.
+EDUCATION AND CAREER
+Andrea studied Animation and Digital Arts at Tecnológico de Monterrey in Mexico from 2011 to 2015. Her 
+university education focused on animation and digital arts, but she ultimately chose a different 
+professional path and does not currently work in the animation industry.
+While attending college in 2015, Andrea worked as a 3D modeling intern at MetaCube. MetaCube is a company that 
+created the movie "Día de Muertos".
+Andrea graduated from Tecnológico de Monterrey in 2015 and started her first job as a Front End Developer 
+approximately three months later. Through that role, she discovered that she loved software development 
+and decided to continue building her professional career in front-end engineering and technology.
+Andrea's career therefore transitioned from an academic background in Animation and Digital Arts into 
+software engineering. Although her university degree is not in computer science, she has built her 
+professional experience through years of working directly in front-end development and software 
+engineering roles.
+In 2008, Andrea spent approximately one year studying abroad at Masillon - Ecole Bilingue Internationale. 
+This experience took place before her university studies at Tecnológico de Monterrey and is part of her 
+international educational background.
 
-Mentorship is also an important part of Andrea's professional approach. She enjoys helping her coworkers 
-develop their skills, grow professionally, and become more confident contributors to their teams.
+PROFESSIONAL MOTIVATIONS
+Andrea enjoys understanding the business context behind a request rather than focusing exclusively on 
+technical implementation. Before developing a solution, she likes to understand why the request exists, 
+what problem it is intended to solve, and how the final implementation will affect the business, product, 
+and users.
+Andrea is interested in improving more than individual features or pieces of code. She looks for 
+opportunities to improve the codebase, development workflows, Sprint processes, team collaboration, 
+efficiency, and maintainability. She considers both software quality and the processes used by the team 
+to build that software.
+When Andrea identifies an opportunity for improvement, she prefers practical and sustainable solutions. 
+Rather than introducing large disruptive changes at once, she likes creating strategies that can be 
+implemented gradually and that are easy for the entire team to understand, adopt, maintain, and manage 
+over time.
 
-Her approach:
-Andrea tries to think two steps ahead, considering not only how to solve the immediate problem but also 
-how a decision may affect the team, product, and codebase in the future. She approaches collaboration with 
-a mentor's mindset and looks for opportunities to help others succeed.
+PROBLEM-SOLVING APPROACH
+Andrea describes her problem-solving approach as trying to think two steps ahead. She considers not 
+only how to solve the immediate problem but also how a technical decision may affect the team, product, 
+development process, user experience, and codebase in the future.
+When evaluating technical solutions, Andrea thinks about long-term maintainability, scalability, future 
+development, and the impact on other developers. She prefers solutions that solve the current problem 
+effectively without unnecessarily creating additional complexity or future maintenance problems.
+Andrea's decision-making combines technical and business considerations. She wants an implementation 
+to make sense from an engineering perspective while also supporting the original business objective. 
+Understanding the reason behind a request helps her determine whether the proposed technical solution 
+is actually the best approach.
 
-Communication style:
-Andrea's communication style is friendly, approachable, and supportive. She tries to communicate as a 
-mentor: clearly explaining her reasoning, sharing knowledge, and making herself accessible to coworkers 
-who need help.
+MENTORSHIP AND TEAM DEVELOPMENT
+Mentorship has been an important part of Andrea's previous professional experience. In a past role, 
+she had opportunities to mentor coworkers and enjoyed helping them strengthen their technical skills, 
+understand unfamiliar concepts, grow professionally, and become more confident contributors to their team.
+Through her previous mentorship experience, Andrea developed a collaborative approach centered on 
+knowledge sharing and helping other developers grow. She enjoyed explaining technical decisions, working 
+through problems with coworkers, and helping them build the skills and confidence needed to work more 
+independently.
+Andrea is not currently serving in a formal mentorship role at Rooms To Go. However, the skills and mindset 
+she developed through previous mentorship experience continue to influence how she collaborates, shares 
+knowledge, explains technical concepts, and supports coworkers when opportunities arise.
 
-Additional information about Andrea:
-- Although Andrea studied Animation and Digital Arts, she does not currently work in that field. She 
-graduated in 2015 and, three months later, started her first job as a Front End Developer. She discovered 
-that she loved software development and has continued working in the field ever since.
-- In 2008, Andrea spent time studying a year abroad at Masillon - Ecole Bilingue Internationale.
-- Andrea loves peaches. She enjoys eating them on their own as well as in cakes, Jell-O, with cinnamon, 
-and in many other ways.
-- Andrea has loved singing since she was a child. She initially mostly sang in the shower, but as she got 
-older, she began singing while driving and almost anywhere she had the opportunity. She now takes online 
-singing lessons with a kind and supportive teacher who has helped her improve her technique and learn how 
-to sing without damaging her vocal cords. Andrea is currently preparing a repertoire of 10 songs: five in 
-English and five in Spanish, spanning different musical genres.
+COMMUNICATION STYLE
+Andrea's communication style is friendly, approachable, supportive, and collaborative. When discussing 
+technical topics, she prefers to explain both what decision was made and why it was made. Providing 
+context is important to her because she wants coworkers to understand the reasoning behind a solution 
+rather than simply follow instructions.
+Andrea's previous mentorship experience influences the way she communicates with coworkers today. She 
+values clearly explaining her reasoning, sharing knowledge, answering questions, and helping others 
+understand unfamiliar concepts. She tries to remain approachable and create an environment where 
+coworkers feel comfortable asking questions.
+
+PERSONAL INTERESTS
+Andrea loves peaches and considers them one of her favorite foods. She enjoys eating fresh peaches on 
+their own as well as trying them in many different forms, including cakes, Jell-O, peaches with cinnamon, 
+and other peach-based foods and desserts.
+Andrea has loved singing since she was a child. When she was younger, she mostly sang in the shower, but 
+as she got older she began singing while driving and almost anywhere she had the opportunity. Singing has 
+remained one of Andrea's long-term hobbies and personal interests.
+Andrea currently takes online singing lessons with a kind and supportive teacher. Her lessons have helped 
+her improve her vocal technique and learn healthier ways to sing without damaging her vocal cords. She 
+continues practicing regularly and is focused on improving both her technique and confidence.
+Andrea is currently preparing a repertoire of 10 songs as part of her singing practice. The repertoire 
+contains five songs in English and five songs in Spanish and includes music from several different genres. 
+Her current singing goal is to learn, practice, and prepare this bilingual collection of songs.
 """
 
 document_education = """
-Important context:
-Andrea does not currently work in Animation and Digital Arts. She graduated in 2015 and, three months 
-later, began her first job as a Front End Developer. She discovered that she loved software development 
-and has continued building her career in technology ever since.
+EDUCATION OVERVIEW
+Andrea studied Animation and Digital Arts at Tecnológico de Monterrey from 2011 to 2015. She earned a 
+Bachelor's degree in Animation and Digital Arts and graduated with a grade of 9.1 out of 10.
 
-University:
-Tecnológico de Monterrey
+Andrea does not currently work in Animation and Digital Arts. About three months after graduating in 2015, 
+she began her first job as a Front End Developer. Through that role, she discovered that she loved software 
+development and has continued building her professional career in technology ever since.
 
-Degree:
-Bachelor's degree in Animation and Digital Arts
+UNIVERSITY AND DEGREE
+University: Tecnológico de Monterrey
+Degree: Bachelor's degree in Animation and Digital Arts
+Program name: Animation and Digital Arts, also known as LAD
+Dates attended: 2011-2015
+Final grade: 9.1 out of 10
 
-Dates:
-2011-2015
+ABOUT THE ANIMATION AND DIGITAL ARTS PROGRAM
+The Animation and Digital Arts program at Tecnológico de Monterrey, also known as LAD, is a comprehensive 
+degree that combines technology, narrative storytelling, and visual arts. Its curriculum is collaborative 
+and prepares students to create content for entertainment, advertising, and interactive media industries.
+The Animation and Digital Arts program has been ranked as the #1 animation program in Mexico and #13 
+internationally by Animation Career Review. The program combines artistic, technical, and narrative 
+disciplines rather than focusing exclusively on a single area of animation or digital production.
 
-Grade:
-9.1 out of 10
+ART AND DESIGN CURRICULUM
+The Art and Design portion of the Animation and Digital Arts curriculum develops students' visual and 
+artistic skills. Areas of study include aesthetics, character design, anatomy, digital drawing, sculpture, 
+and other disciplines related to visual design and artistic development.
 
-About the program:
-The Animation and Digital Arts program, also known as LAD, is a comprehensive degree that combines 
-technology, narrative storytelling, and visual arts. The program has been ranked as the #1 animation 
-program in Mexico and #13 internationally by Animation Career Review. Its collaborative curriculum 
-prepares students to create content for the entertainment, advertising, and interactive media industries.
 
-Core areas of the curriculum:
+TECHNOLOGY AND INNOVATION CURRICULUM
+The Technology and Innovation portion of the program exposes students to industry-standard software, 
+real-time engines, and emerging technologies. Areas of study include technologies such as artificial 
+intelligence (AI), Virtual Reality (VR), and Augmented Reality (AR).
 
-Art and Design:
-Students develop skills in aesthetics, character design, anatomy, digital drawing, sculpture, and other 
-areas of visual design.
+AUDIOVISUAL PRODUCTION AND NARRATIVE
+The Audiovisual Production and Narrative portion of the Animation and Digital Arts program teaches 
+students how to create and communicate stories. Areas of study include storyboarding, cinematography, 
+directing, sound design, and other disciplines involved in visual and audiovisual storytelling.
 
-Technology and Innovation:
-Students work with industry-standard software, real-time engines, and emerging technologies such as 
-artificial intelligence (AI), Virtual Reality (VR), and Augmented Reality (AR).
+AREAS OF SPECIALIZATION
+Tecnológico de Monterrey's Animation and Digital Arts program allows students to customize their 
+academic path through multiple areas of specialization. Rather than requiring students to focus 
+exclusively on one discipline, the program offers concentrations across animation, interactivity, 
+post-production, film, and business.
+Animation specializations include 2D animation, 3D character animation, and stop-motion animation. 
+These areas focus on different techniques for creating animated characters, movement, and visual 
+storytelling across traditional and digital production methods.
+Gaming and Interactivity specializations include video game design, immersive environments, and User 
+Experience/User Interface design, commonly known as UX/UI. These areas combine interactive technology, 
+digital experiences, and user-centered design.
+Post-Production specializations include sound design, Visual Effects (VFX), digital modeling, and 
+lighting. These disciplines focus on the technical and artistic processes used to create, enhance, and 
+finalize digital and audiovisual productions.
+Film and Business specializations include film production and direction, creative writing, and 
+entrepreneurship within the creative industries. These areas combine storytelling, production, leadership, 
+and business knowledge related to entertainment and creative work.
 
-Audiovisual Production and Narrative:
-Students learn to create and communicate stories through disciplines such as storyboarding, 
-cinematography, directing, and sound design.
+CAREER OPPORTUNITIES
+The Animation and Digital Arts program prepares graduates for both technical specialist roles and creative 
+or technical leadership positions. Career opportunities can include work in animation and VFX studios, 
+video game development, film production, commercial advertising, UI/UX design, and architectural visualization.
+Graduates of the Animation and Digital Arts program have worked at organizations including Sony Pictures 
+Imageworks, Moving Picture Company (MPC), Netflix, and Cinesite. Alumni have pursued careers across 
+animation, visual effects, film production, and other areas of the entertainment industry.
+Graduates of the program have contributed to major film productions including Spider-Man: Across the 
+Spider-Verse, Guardians of the Galaxy Vol. 3, Dune, and Avatar. These examples reflect the program's 
+connection to professional animation, film, and visual effects industries.
 
-Areas of specialization:
-Rather than focusing exclusively on a single discipline, Tecnológico de Monterrey offers multiple 
-concentrations that allow students to customize their academic paths. Areas of specialization include:
-
-- Animation: 2D animation, 3D character animation, and stop-motion animation.
-- Gaming and Interactivity: video game design, immersive environments, and User Experience/User 
-Interface (UX/UI) design.
-- Post-Production: sound design, Visual Effects (VFX), digital modeling, and lighting.
-- Film and Business: film production and direction, creative writing, and entrepreneurship within 
-the creative industries.
-
-Career opportunities:
-The program prepares graduates to work not only as technical specialists but also in creative and 
-technical leadership positions. Graduates can pursue opportunities in animation and VFX studios, 
-video game development, film production, commercial advertising, UI/UX design, and architectural 
-visualization.
-
-Alumni of the program have worked at organizations such as Sony Pictures Imageworks, Moving Picture 
-Company (MPC), Netflix, and Cinesite. Graduates have also contributed to major film productions 
-including Spider-Man: Across the Spider-Verse, Guardians of the Galaxy Vol. 3, Dune, and Avatar.
-
-While still in college Andrea interned as a 3D modeller for MetaCube, a company that created the 
-movie "Día de Muertos". She created a lot of environment models that included a lot of skulls in 
-them.
+ANDREA'S COLLEGE INTERNSHIP
+While attending college, Andrea worked as a 3D modeling intern at MetaCube. MetaCube is a company that 
+created the movie "Día de Muertos". This internship gave Andrea professional experience in 3D modeling 
+while she was still completing her Animation and Digital Arts degree.
+During her internship at MetaCube, Andrea primarily created 3D environment models. Many of the environments 
+she worked on included skulls, so skull modeling became a recurring part of the environment assets she 
+produced during the internship.
 """
 
 document_professional_experience = """
-Professional Summary:
+PROFESSIONAL SUMMARY
+Andrea has worked professionally as a Front End Engineer since 2016. Her experience includes developing 
+web applications, working with Content Management Systems (CMS), and contributing to software projects 
+across multiple industries. Her career has included both individual contributor responsibilities and 
+technical leadership responsibilities.
+Andrea places significant importance on understanding the business needs behind technical requirements 
+rather than focusing only on implementation. Her professional experience includes collaborating with 
+cross-functional teams, leading development initiatives, improving Agile and Scrum processes, and 
+identifying opportunities to improve user experience and engineering efficiency.
+Andrea also has previous professional mentorship experience. In past roles at Globant and Twitter, 
+she mentored engineers and supported their professional development. Mentorship is part of her previous 
+leadership experience, but she is not currently serving in a formal mentorship role at Rooms To Go.
 
-Andrea has worked as a Front End Engineer since 2016, developing web applications and working with 
-Content Management Systems (CMS) across multiple industries. Her experience includes both 
-individual contributor and technical leadership responsibilities.
+PROFESSIONAL EXPERIENCE
 
-In addition to front-end development, Andrea places significant importance on understanding the 
-business needs behind technical requirements. She has experience mentoring engineers, leading 
-development initiatives, collaborating with cross-functional teams, improving Agile and Scrum 
-processes, and identifying opportunities to improve both user experience and engineering 
-efficiency.
+METACUBE — 3D DIGITAL MODELER INTERN — 2015
+Andrea began her professional career in 2015 as a 3D Digital Modeler intern at MetaCube. During this 
+internship, she worked on the animated film "Día de Muertos." The role was directly related to her 
+university studies in Animation and Digital Arts and provided her with professional experience in 3D 
+digital modeling.
 
-
-Professional Experience:
-
-2015: 3D Digital Modeler Intern at MetaCube
-
-Andrea began her professional career as a 3D Digital Modeler intern at MetaCube, where she 
-worked on the animated film Día de Muertos. Although this position was related to her Animation 
-and Digital Arts degree, she transitioned into front-end software development shortly afterward.
-
-
-2016-2018: Front End Engineer at Base22
-
-Andrea worked as a Front End Engineer at Base22, beginning her professional career in software 
-development and web application development.
+Although Andrea's first professional experience was in 3D modeling, she transitioned into front-end 
+software development shortly afterward. Her MetaCube internship represents the beginning of her 
+professional career before she moved from the Animation and Digital Arts field into software engineering.
 
 
-2018-2022: Senior Front End Engineer at Globant
-
-- Led a consulting development team working with Realogy to build two internal platforms using 
-Angular 7, NgRx, Jasmine, and Apollo GraphQL. These intranets provided real estate professionals 
-with a centralized platform for accessing essential tools used in their day-to-day work.
-
-- Engineered an npm library using Node.js to provide a standardized theme across multiple 
-intranets and applications. This improved development efficiency and visual consistency across products.
-
-- Collaborated with Stanley Black & Decker's team to improve its Site Manager and Public API 
-internal applications. Andrea also developed a week-by-week action plan designed to streamline 
-the team's development and Scrum processes.
-
-- Mentored three colleagues at a time, providing ongoing guidance and support to help them 
-develop professionally and advance within their teams.
-
-- Interviewed prospective engineering candidates and evaluated their potential fit within the 
-company and its development teams.
+BASE22 — FRONT END ENGINEER — 2016-2018
+Andrea worked as a Front End Engineer at Base22 from 2016 to 2018. This position marked the beginning 
+of her professional career in software development and web application development after transitioning 
+away from the Animation and Digital Arts field.
 
 
-2022-2023: Software Engineer at Twitter
+GLOBANT — SENIOR FRONT END ENGINEER — 2018-2022
+Andrea worked as a Senior Front End Engineer at Globant from 2018 to 2022. During this role, she worked 
+as a consultant with multiple clients, including Realogy and Stanley Black & Decker. Her responsibilities 
+included front-end development, technical leadership, process improvement, candidate interviews, and 
+employee mentorship.
 
-- Led the front-end effort for the Semantic Core UI migration using React.js, TypeScript, 
-JavaScript, and CSS. The migration supported Twitter's internal advertising platform, which 
-enabled clients to gather insights and make more informed decisions about ad promotion.
+At Globant, Andrea led a consulting development team working with Realogy to build two internal 
+platforms. The applications were developed using Angular 7, NgRx, Jasmine, and Apollo GraphQL and 
+functioned as intranets for real estate professionals.
 
-- Mentored and led a five-person group within the TwST (Twitter Security Team) organization, 
-supporting professional development, team collaboration, and cross-functional work toward 
-departmental objectives.
+The two Realogy intranets provided real estate professionals with centralized access to essential tools 
+used in their day-to-day work. Andrea's responsibilities on the project included development leadership 
+as well as contributing to the implementation of the internal web applications.
 
-- Authored the Technical Design Document for the Semantic Core UI migration. The document 
-defined the technical approach for new implementations while establishing a more organized 
+Andrea engineered an npm library using Node.js to provide a standardized theme across multiple intranets 
+and applications. The shared library helped improve development efficiency by allowing teams to reuse 
+common functionality and styling while also increasing visual consistency across products.
+
+Andrea also collaborated with Stanley Black & Decker's development team to improve its Site Manager and 
+Public API internal applications. Her work included contributing to the applications themselves as well 
+as evaluating opportunities to improve the team's development processes.
+
+For the Stanley Black & Decker team, Andrea developed a week-by-week action plan intended to streamline 
+the development workflow and improve Scrum processes. The plan focused on creating a more organized and 
+efficient approach to the team's software development and delivery practices.
+
+Mentorship was part of Andrea's responsibilities at Globant. She mentored three colleagues at a time, 
+providing ongoing guidance and support intended to help them develop professionally, strengthen their 
+skills, and advance within their respective teams.
+
+Andrea also participated in Globant's engineering hiring process. She interviewed prospective engineering 
+candidates and evaluated their technical and professional potential to determine how well they could fit 
+within the company and its development teams.
+
+
+TWITTER — SOFTWARE ENGINEER — 2022-2023
+Andrea worked as a Software Engineer at Twitter from 2022 to 2023. Her responsibilities included front-end 
+engineering, technical design, technical leadership, mentorship, and cross-functional collaboration within 
+projects related to Twitter's internal systems.
+
+Andrea led the front-end effort for the Semantic Core UI migration at Twitter. The implementation used 
+React.js, TypeScript, JavaScript, and CSS and supported an internal advertising platform used by clients 
+to gather insights and make more informed decisions about advertising promotion.
+
+Andrea authored the Technical Design Document for the Semantic Core UI migration. The document defined the 
+technical approach for new implementations while also establishing a more organized application 
 architecture designed to improve code quality and long-term maintainability.
 
-
-2023-Present: Senior Front End Engineer at Rooms To Go
-
-Andrea works as a Senior Front End Engineer at Rooms To Go, where she has contributed to 
-improving e-commerce website performance, streamlining content management and updates, 
-implementing new customer-facing functionality, and collaborating with cross-functional 
-teams. She has also taken on front-end leadership responsibilities and worked to improve 
-Agile processes, engineering efficiency, and delivery.
-
-Key contributions at Rooms To Go include:
-
-- Helped migrate the primary Rooms To Go e-commerce website from React.js and Material UI 
-(MUI) to Next.js, TypeScript, and Tailwind CSS. The new architecture introduced a more 
-efficient server-side solution and resulted in a 45% performance improvement, improving 
-the customer experience.
-
-- Developed, updated, and redesigned React.js components, Strapi schemas, and the 
-organization's internal npm library to simplify e-commerce content management. These 
-improvements supported timely website updates, including weekly sales and promotional content.
-
-- Collaborated closely with Content, UX, and Marketing teams to understand business 
-requirements and translate them into actionable engineering tickets. Andrea also assumed 
-leadership responsibilities for coordinating and supporting their implementation within the 
-front-end team.
-
-Rooms To Go AI-Specific Projects:
-
-1. AI-Powered Customer Review Summarization at Rooms To Go
-Andrea spearheaded the front-end implementation of an AI-powered customer review summarization 
-feature at Rooms To Go. The solution used n8n to automate the processing and 
-categorization of customer reviews before providing the categorized review data to a Large Language 
-Model (LLM).
-The LLM analyzed the reviews and generated two types of AI summaries: an overall summary 
-representing the general customer sentiment and key themes across all reviews, and category-specific 
-summaries highlighting feedback related to individual review categories.
-This project combined front-end engineering, workflow automation with n8n, LLM integration, 
-review categorization, and database updates to transform large volumes of individual customer 
-reviews into concise and useful summaries.
-
-2. AI-Powered Front-End Documentation Automation at Rooms To Go
-
-Andrea implemented an AI-powered documentation workflow using GitHub agents to automatically 
-detect application changes, generate technical documentation, and publish updates to Confluence.
-The workflow is triggered when a specific schema file is modified, signaling that the portion of 
-the front-end application being documented has changed. A GitHub agent detects the modification 
-and initiates a request for the AI to investigate the relevant project sources needed to understand 
-the update and its impact.
-
-The AI analyzes these sources to determine the functionality and logic associated with the change. 
-It then generates a comprehensive description that captures the relevant application logic and 
-updates a structured JSON file that serves as the source of truth for the expected documentation.
-
-When the changes are ready to be merged into production, a second GitHub agent checks whether the 
-documentation JSON file was modified. If an update is detected, the agent automatically publishes 
-the corresponding documentation changes to the appropriate Confluence pages.
-
-This workflow creates an automated documentation pipeline in which application changes trigger 
-AI-assisted analysis and documentation generation, while the production workflow ensures that 
-approved documentation is automatically published to Confluence. The process helps keep documentation 
-synchronized with the application while reducing the manual effort required from developers to 
-document and communicate technical changes.
+Andrea also mentored and led a five-person group within the TwST, or Twitter Security Team, organization. 
+In this previous mentorship role, she supported professional development, encouraged team collaboration, 
+and helped coordinate cross-functional work toward broader departmental objectives.
 
 
-Technical Skills:
+ROOMS TO GO — SENIOR FRONT END ENGINEER — 2023-PRESENT
+Andrea has worked as a Senior Front End Engineer at Rooms To Go since 2023. Her work includes improving 
+the company's e-commerce website, streamlining content management and website updates, implementing 
+customer-facing functionality, and collaborating with cross-functional teams.
 
-Programming and Web Technologies:
-JavaScript (ES6+), TypeScript, HTML, CSS, Node.js, Scala
+At Rooms To Go, Andrea has also taken on front-end leadership responsibilities and contributed to 
+improvements in Agile processes, engineering efficiency, and software delivery. Her current leadership 
+responsibilities focus on front-end work, technical coordination, business requirements, and development 
+processes rather than formal employee mentorship.
 
-Front-End Frameworks and Libraries:
-React.js, Next.js, Angular 7, Vue, jQuery, Redux, NgRx, Material UI (MUI), Tailwind CSS, 
-SASS, Mustache, Handlebars
+Andrea helped migrate the primary Rooms To Go e-commerce website from an architecture using React.js and 
+Material UI (MUI) to one using Next.js, TypeScript, and Tailwind CSS. The new architecture introduced a 
+more efficient server-side solution.
 
-Testing:
-Jest, Jasmine, Cypress
+The Rooms To Go website migration resulted in a 45% performance improvement. By improving the application's 
+architecture and server-side behavior, the migration increased website performance and contributed to a 
+better customer experience on the company's primary e-commerce platform.
 
-APIs and Data:
-Apollo GraphQL, GraphQL, REST APIs
+Andrea develops, updates, and redesigns React.js components, Strapi schemas, and the organization's internal 
+npm library. This work is intended to simplify the management of e-commerce content and make recurring 
+website changes easier for the teams responsible for maintaining the site.
 
-Content Management Systems:
-Strapi, IBM Web Content Manager (WCM), Liferay DXP
+The content-management improvements Andrea has contributed to at Rooms To Go support timely website updates, 
+including frequent sales and promotional changes. Weekly promotions require the e-commerce site to be updated 
+efficiently, making maintainable components, schemas, and shared tooling important to the content workflow.
 
-Build and Development Tools:
-Webpack, Gulp, Grunt, Git
+Andrea works closely with the Content, UX, and Marketing teams at Rooms To Go to understand business 
+requirements. She translates those requirements into actionable engineering tickets so that requested 
+features and website changes can be understood and implemented by the front-end engineering team.
 
-AI and Automation:
-n8n, Claude, Cursor, Gemini
-
-Development Methodologies:
-Agile, Scrum, Kanban
+Andrea has also assumed front-end leadership responsibilities for coordinating and supporting the 
+implementation of requirements from Content, UX, and Marketing. This involves connecting business needs with 
+front-end development work and helping organize how those requirements are delivered by the engineering team.
 
 
-Languages:
+AI PROJECTS AT ROOMS TO GO
 
-Spanish: Native
-English: Fluent
-French: Proficient
+AI-POWERED CUSTOMER REVIEW SUMMARIZATION
+Andrea spearheaded the front-end implementation of an AI-powered customer review summarization feature at Rooms 
+To Go. The project was designed to transform large volumes of individual e-commerce customer reviews into 
+concise summaries that make customer feedback easier to understand and use.
+The customer review summarization workflow uses n8n to automate the processing and categorization of customer 
+reviews. Reviews are organized into relevant categories before the categorized data is provided to a Large 
+Language Model (LLM) for analysis and summary generation.
+
+The Large Language Model generates two types of customer review summaries. One is an overall summary that 
+represents general customer sentiment and important themes across all reviews. The second consists of 
+category-specific summaries that highlight customer feedback associated with individual review categories.
+
+The AI review summarization project combines front-end engineering, n8n workflow automation, LLM integration, 
+review categorization, and database updates. Together, these components transform individual customer reviews 
+into structured data and concise AI-generated summaries that can be presented to users.
+
+
+AI-POWERED FRONT-END DOCUMENTATION AUTOMATION
+Andrea implemented an AI-powered front-end documentation workflow at Rooms To Go. The system uses GitHub agents 
+and AI to detect application changes, investigate the relevant code and project sources, generate technical 
+documentation, and automatically publish approved documentation updates to Confluence.
+
+The documentation workflow begins when a specific schema file is modified. A modification to this schema 
+indicates that the portion of the front-end application represented by the documentation has changed. This 
+file change acts as the trigger for the first GitHub agent in the automation workflow.
+
+When the schema modification is detected, the first GitHub agent initiates a request for the AI to investigate 
+the project sources relevant to the application change. The goal of this step is to provide the AI with enough 
+information to understand what changed and how the change affects the application's functionality.
+
+The AI analyzes the relevant project sources to determine the functionality and application logic associated 
+with the detected change. It then generates a comprehensive technical description intended to capture the 
+important logic and behavior required for the application's documentation.
+
+The AI-generated documentation is stored in a structured JSON file. This JSON file serves as the source of 
+truth for the expected front-end documentation and contains the documentation data that should ultimately 
+be reflected in the corresponding Confluence pages.
+
+When application changes are ready to be merged into production, a second GitHub agent checks whether the 
+documentation JSON file has been modified. A change to the JSON file indicates that the application's 
+technical documentation also requires an update.
+
+If the second GitHub agent detects a documentation JSON update, it automatically publishes the corresponding 
+documentation changes to the appropriate Confluence pages. This connects approved application changes with 
+the publication of their associated technical documentation.
+
+The complete workflow creates an automated documentation pipeline. Application changes trigger AI-assisted 
+investigation and documentation generation, while the production workflow ensures that approved documentation 
+is automatically published to Confluence when the corresponding documentation data changes.
+
+The AI documentation workflow helps keep technical documentation synchronized with the front-end application. 
+It also reduces the manual effort required from developers to investigate application changes, write 
+documentation, update documentation sources, and communicate approved technical changes through Confluence.
+
+
+TECHNICAL SKILLS
+
+PROGRAMMING AND WEB TECHNOLOGIES
+Andrea's programming and web technology experience includes JavaScript (ES6+), TypeScript, HTML, CSS, 
+Node.js, and Scala.
+
+
+FRONT-END FRAMEWORKS AND LIBRARIES
+Andrea's front-end framework and library experience includes React.js, Next.js, Angular 7, Vue, jQuery, 
+Redux, NgRx, Material UI (MUI), Tailwind CSS, SASS, Mustache, and Handlebars.
+
+
+TESTING
+Andrea's software testing experience includes Jest, Jasmine, and Cypress.
+
+
+APIS AND DATA
+Andrea's API and data technology experience includes Apollo GraphQL, GraphQL, and REST APIs.
+
+
+CONTENT MANAGEMENT SYSTEMS
+Andrea has professional experience working with Content Management Systems including Strapi, IBM Web 
+Content Manager (WCM), and Liferay DXP.
+
+
+BUILD AND DEVELOPMENT TOOLS
+Andrea's build, version control, and development tool experience includes Webpack, Gulp, Grunt, and Git.
+
+
+AI AND AUTOMATION
+Andrea's AI and automation tool experience includes n8n, Claude, Cursor, and Gemini.
+
+
+DEVELOPMENT METHODOLOGIES
+Andrea has professional experience working with Agile, Scrum, and Kanban software development methodologies.
+
+
+LANGUAGES
+Andrea is a native Spanish speaker.
+Andrea is fluent in English.
+Andrea is proficient in French.
 """
 
 #=======================================
